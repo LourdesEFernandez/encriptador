@@ -17,15 +17,22 @@
 
     <!-- cuerpo  -->
     <main id="main">
-        <section id="s-message">
-            <div id="box-text">
-                <p id="s-m-text">Ingrese aquí su texto</p>
-            </div>
-            <div id="buttons">
-                <div class="c-btn">Encriptar</div>
-                <div id="decrypt" class="c-btn">Desencriptar</div>
-            </div>
-        </section>
+
+        <!-- formulario para introducir texto -->
+        <form id="s-message">
+            <!-- caja de texto -->
+            <textarea id="message" 
+            name="" cols="30" rows="10"
+            placeholder="Ingresa aquí tu mensaje"
+            autofocus></textarea>
+            
+            <!-- botones -->
+            <input class="c-btn" id="encrypt" 
+            type="submit" value="Encriptar">
+            <input class="c-btn" id="decrypt" 
+            type="submit" value="Desencriptar">
+
+        </form>
 
         <section id="s-encrypted-message">
             <div id="m-box-img">
@@ -33,7 +40,7 @@
             </div>
             <div id="s-encrypted-text">
                 <p id="subtitle">¡El que busca encuentra!</p>
-                <p id="pharagraph">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <p id="pharagraph">Encuentra aquí tu mensaje</p>
             </div>
         </section>
     </main>
