@@ -49,7 +49,7 @@
 
 #s-message{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: 4fr auto;
     gap: 10px;
 }
@@ -134,9 +134,18 @@
     }
 
     .c-btn{
+        margin: 0 auto;
         font-size: small;
         min-height: 7vh;
-        min-width: 100%;
+        width: 43vw;
+    }
+
+    #encrypt{
+        grid-column: 1;
+    }
+
+    #decrypt{
+        grid-column: 2;
     }
 
     #m-box-img{
@@ -157,6 +166,7 @@
         font-size: small;
     }
 }
+
 
 @media screen and (max-width: 375px) {
     #s-message{
