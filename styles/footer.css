@@ -1,0 +1,15 @@
+#footer{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    align-content: end;
+    cursor: default;
+}
+
+#f-text{    
+    font-family: var(--font_text1);
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--color_primary);
+    letter-spacing: .1vw;
+}

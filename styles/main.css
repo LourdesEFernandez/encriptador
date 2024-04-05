@@ -1,0 +1,81 @@
+:root{
+    --box_color:#fffdfb;
+    --color_shadow:#f0ece8;
+    --blur:10px;
+    --color_text: #888;
+    --color_btn:#fff1db;
+}
+
+#main{
+    display: flex;
+    padding: 0 4vw;
+    font-family: var(--font_text2);
+}
+
+#s-encrypted-message{
+    padding: 0 1vw;
+    border-radius: 10px;
+    align-content: center;
+    box-shadow: -8px 0px var(--blur) var(--color_shadow), 8px 0px var(--blur) var(--color_shadow);
+    background-color: var(--box_color);
+}
+
+#m-box-img{
+    scale: .9;
+}
+
+#s-encrypted-text{
+    text-align: center;
+}
+#subtitle{
+    font-family: var(--font_text1);
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color_primary);
+    cursor: default;
+    margin-bottom: 1vh;
+}
+#pharagraph{
+    color: var(--color_text);
+    font-weight: 300;
+}
+
+#s-message{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#box-text{
+    flex: 1;
+}
+
+#s-m-text{
+    font-weight: 300;
+    font-size: 1.5em;
+    color: var(--color_text);
+}
+
+#buttons{
+    width: auto;
+    display: flex; 
+    gap: 2vw;
+}
+.c-btn{
+    width: 20vw;
+    min-height: 8vh;
+    border-radius: 10px;
+    background-color: var(--color_primary);
+    text-align: center;
+    align-content: center;
+    color: var(--box_color);
+    font-weight: 300;
+    font-size: medium;
+    cursor: pointer;
+}
+#decrypt{
+    border: 1px solid var(--color_primary);
+    background-color: var(--color_btn);
+    color: var(--color_primary);
+}
+

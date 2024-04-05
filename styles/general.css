@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg_color);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+
+
+:root{
+    --bg_color:#fdfaf6;
+    --color_primary:#FF9C09;
+    --font_text1: "Amatic SC", sans-serif;
+    --font_text2: "Roboto Condensed", sans-serif;
+}
