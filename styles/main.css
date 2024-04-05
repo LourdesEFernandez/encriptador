@@ -1,6 +1,6 @@
 :root{
     --box_color:#fffdfb;
-    --color_shadow:#f0ece8;
+    --color_shadow:#ebe5df;
     --blur:10px;
     --color_text: #888;
     --color_btn:#fff1db;
@@ -68,7 +68,7 @@
 
 
 .c-btn{
-    width: 20vw;
+    min-width: 20vw;
     min-height: 8vh;
     border: none;
     border-radius: 10px;
@@ -115,4 +115,36 @@
 
     grid-row: 2;
     grid-column: 2;
+}
+
+@media screen and (max-width: 768px ){
+    
+    #main{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #message{
+        font-size: 1.3em;
+    }
+
+    .c-btn{
+        margin: 0 auto;
+        font-size: small;
+        min-height: 7vh;
+        min-width: 22vw;
+    }
+
+    #m-box-img{
+        display: none;
+    }
+
+    #s-encrypted-message{
+        width: 80vw;
+        height: auto;
+        padding: 2vh 0;
+        margin: 0 auto;
+    }
+
 }
