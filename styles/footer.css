@@ -1,9 +1,11 @@
 #footer{
     width: 100%;
-    height: 10vh;
-    text-align: center;
-    align-content: end;
+    height: 5vh;
     cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #f-text{    

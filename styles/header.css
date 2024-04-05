@@ -3,17 +3,19 @@
     height: 9vh;
 
     display: flex;
-    padding: 0 4vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 0 2vw;
     cursor: default;
 }
 
 #h-img{
     scale: .4;
-    align-content: center;
 }
 
 #h-title{
-    align-content: center;
+    vertical-align: middle;
     font-family: var(--font_text1);
     color: var(--color_primary);
     font-size: 1.8em;
