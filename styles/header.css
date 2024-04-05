@@ -20,3 +20,23 @@
     color: var(--color_primary);
     font-size: 1.8em;
 }
+
+@media screen and (max-width: 768px){
+    #h-img{
+        scale: .3;
+    }
+
+    #h-title{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #h-img{
+        scale: .3;
+    }
+
+    #h-title{
+        font-size: 1.6em;
+    }
+}

@@ -15,3 +15,15 @@
     color: var(--color_primary);
     letter-spacing: .1vw;
 }
+
+@media screen and (max-width: 768px) {
+    #f-text{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #f-text{
+        font-size: small;
+    }
+}
