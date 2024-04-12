@@ -78,9 +78,14 @@ function limpiar(id) {
 }
 
 function restar() {
-    mainText();
+    if (window.matchMedia("(max-width: 768px)")) {
+        mainText();
+        document.querySelector("#restar").style.display = "none";
+    } else {
+        mainText();
     document.querySelector("#m-box-img").style.display = "flex";
     document.querySelector("#restar").style.display = "none";
+    }
 }
 
-mainText();
+mainText(); 
