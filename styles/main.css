@@ -16,7 +16,8 @@
 }
 
 #s-encrypted-message{
-    padding: 0 1vw;
+    height: 84vh;
+    padding: 2vh 1vw;
     border-radius: 10px;
     box-shadow: -8px 0px var(--blur) var(--color_shadow), 8px 0px var(--blur) var(--color_shadow);
     background-color: var(--box_color);
@@ -24,7 +25,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 #m-box-img{
@@ -32,7 +32,9 @@
 }
 
 #s-encrypted-text{
+    flex: 1;
     text-align: center;
+    overflow-y: auto;
 }
 #subtitle{
     font-family: var(--font_text1);
@@ -45,6 +47,10 @@
 .pharagraph{
     color: var(--color_text);
     font-weight: 300;
+}
+#messageEncrypted{
+    font-weight: 300;
+    font-size: large;
 }
 
 #s-message{
@@ -87,25 +93,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: all 200ms;
 }
 .c-btn:hover{
-    animation-name: btn;
-    animation-duration: 900ms;
+    scale: 1.1;
 }
 
-@keyframes btn {
-    from{
-        scale: 1;
-    }
-    50% {
-        scale: 1.1;
-    }
-    to{
-        scale: 1;
-    }
-    
-}
 
 #encrypt{
     grid-row: 3;
@@ -119,6 +112,10 @@
 
     grid-row: 3;
     grid-column: 2;
+}
+#copy{
+    margin: 1vh auto;
+    display: none;
 }
 
 @media screen and (max-width: 768px ){
@@ -164,6 +161,10 @@
     }
     .pharagraph{
         font-size: small;
+    }
+
+    #messageEncrypted{
+        font-size: 1.1em;
     }
 }
 

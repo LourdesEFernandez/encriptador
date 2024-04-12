@@ -18,8 +18,8 @@
     <!-- cuerpo  -->
     <main id="main">
 
-        <!-- formulario para introducir texto -->
-        <form id="s-message">
+        <!-- caja para introducir texto -->
+        <div id="s-message">
             <!-- caja de texto -->
             <textarea id="message" 
             name="" cols="30" rows="10"
@@ -27,12 +27,10 @@
             autofocus></textarea>
             <label id="label" class="pharagraph" for="message">Solo letras minúsculas y sin acento</label>
             <!-- botones -->
-            <input class="c-btn" id="encrypt" 
-            type="submit" value="Encriptar">
-            <input class="c-btn" id="decrypt" 
-            type="submit" value="Desencriptar">
+            <div class="c-btn" id="encrypt" onclick="encrypt()">Encriptar</div>
+            <div class="c-btn" id="decrypt" onclick="decrypt();">Desencriptar</div>
 
-        </form>
+        </div>
 
         <section id="s-encrypted-message">
             <div id="m-box-img">
@@ -40,8 +38,9 @@
             </div>
             <div id="s-encrypted-text">
                 <p id="subtitle">¡El que busca encuentra!</p>
-                <p class="pharagraph">Encuentra aquí tu mensaje</p>
+                <p id="messageEncrypted" class="pharagraph">Encuentra aquí tu mensaje</p>
             </div>
+            <div class="c-btn" id="copy">Copiar</div>
         </section>
     </main>
 
@@ -49,5 +48,7 @@
     <footer id="footer">
         <p id="f-text">Copyright &copy;2024 Lourdes Eliana Fernández</p>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
